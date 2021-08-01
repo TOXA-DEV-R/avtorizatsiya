@@ -14,7 +14,7 @@ const App = () => {
         <Router>
           <Switch>
             {token ? (
-              <Route exact path="/" />
+              <Route exact path="/" component={HomePage} />
             ) : (
               <Route exact path="/" component={LoginPage} />
             )}
